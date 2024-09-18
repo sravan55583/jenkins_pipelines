@@ -1340,6 +1340,7 @@ Copy module demo
       copy:
         src: /home/ansadmin/sample.txt
         dest: /tmp
+        remote_src: yes
         
 --- 
 - name: copy module demo
