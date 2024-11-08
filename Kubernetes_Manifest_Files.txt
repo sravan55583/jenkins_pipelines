@@ -70,23 +70,7 @@ kubectl exec environments -- /bin/bash -c  'echo $MYNAME'
   <html><body><h1>It works!</h1></body></html>
 
 
-  =================
-
-  ---
-  kind: Pod
-  apiVersion: v1
-  metadata:
-    name: labelspod
-    labels:                       # Specifies the Label details under it
-      env: development
-      class: pods
-  spec:
-    containers:
-      - name: labelcont
-        image: ubuntu:latest
-        command: ["/bin/bash", "-c", "while true; do echo Hello-kubernetes; sleep 5 ; done"]
-
-=====================
+ 
 
 Pods with labels
 ================
